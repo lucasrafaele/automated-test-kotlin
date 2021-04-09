@@ -1,0 +1,99 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-09T17:42:24.639Z",
+        "line": 9,
+        "name": "Acessar o canal do Super Meia",
+        "description": "",
+        "id": "poc;acessar-o-canal-do-super-meia",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 5628616000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que acesso o youtube",
+            "match": {
+              "location": "void ampli.poc.steps.PocSteps.que_acesso_o_youtube()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5522026000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "digito \u003c\"Super Meia\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super Meia\"",
+                  "offset": 8
+                }
+              ],
+              "location": "void ampli.poc.steps.PocSteps.digito(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4681568000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico em buscar \u003c\"Super Meia\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super Meia\"",
+                  "offset": 17
+                }
+              ],
+              "location": "void ampli.poc.steps.PocSteps.clico_em_buscar(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"partial link text\",\"selector\":\"Super Meia\"}\n  (Session info: headless chrome\u003d89.0.4389.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027lucas-Inspiron-5557\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.8.0-48-generic\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.vbSy1Y}, goog:chromeOptions: {debuggerAddress: localhost:39173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: de941713b5d3bb3cf5f984c97f9c0023\n*** Element info: {Using\u003dpartial link text, value\u003dSuper Meia}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)\n\tat org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat ampli.poc.utils.ChromeConfig.findElementByText(ChromeConfig.kt:56)\n\tat ampli.poc.pages.PocPages.viewSuperMeiaChannel(PocPages.kt:25)\n\tat ampli.poc.steps.PocSteps.devo_ver_o_canal_do(PocSteps.kt:44)\n\tat ✽.devo ver o canal do \u003c\"Super Meia\"\u003e(file:///home/lucas/codes/ampli/automation-tests/src/test/resources/features/poc.feature:13)\n",
+              "duration": 5392517000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "devo ver o canal do \u003c\"Super Meia\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super Meia\"",
+                  "offset": 21
+                }
+              ],
+              "location": "void ampli.poc.steps.PocSteps.devo_ver_o_canal_do(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Youtube"
+          },
+          {
+            "name": "@regressao"
+          }
+        ]
+      }
+    ],
+    "name": "Poc",
+    "description": "  EU COMO dev\n  PRECISO fazer um teste\n  PARA automatizar algo",
+    "id": "poc",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/poc.feature",
+    "tags": []
+  }
+]
